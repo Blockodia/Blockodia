@@ -8,4 +8,4 @@ body:
       label: Describe the Bug
       description: "What is the bug?"
       placeholder: "Player can glitch through the wall"
-      required: true
+     required: true
