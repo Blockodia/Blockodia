@@ -1,12 +1,38 @@
 name: Report a bug
-description: Help us improve the server
-labels: bug
+description: Report a bug to help us improve the server
+labels:
+  - bug
 body:
-  - type: textarea
-    id: describe
+  - type: checkboxes
+    id: checklist
     attributes:
-      label: Describe the Bug
-      description: "What is the bug?"
-      placeholder: "Player can glitch through the wall"
+      label: Checklist
+      description: Please make sure you've completed this before you submit your issue
+      options:
+        - label: I've checked if another issue already exists.
+          required: true
+        - label: I'm sure this is an unintended feature
+          required: true
+  - type: textarea
+    id: discribe-the-bug
+    attributes:
+      label: Discribe the bug
+      description: What is the bug exactly?
+      placeholder: Players can glitch through walls
     validations:
       required: true
+  - type: textarea
+    id: howtoreproduce
+    attributes:
+      label: How to Reproduce?
+      description: How can we reproduce the bug, unreproducible bugs will not be fixed.
+      placeholder: 1. Get a boat 2. Keep walking in the wall with a boat 3. See the bug!
+    validations:
+      required: true
+  - type: textarea
+    id: anythingelse
+    attributes:
+      label: Anything else?
+      description: This is the place where you can put screenshots as well.
+      placeholder: No. Nothing else.
+      value: No. Nothing else.
