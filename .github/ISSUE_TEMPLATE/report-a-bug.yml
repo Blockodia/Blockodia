@@ -2,10 +2,11 @@ name: Report a bug
 description: Help us improve the server
 labels: bug
 body:
-  - type: input
+  - type: textarea
     id: describe
     attributes:
       label: Describe the Bug
       description: "What is the bug?"
-      placeholder: "Player can glitch through the wall"
-     required: true
+     placeholder: "Player can glitch through the wall"
+     validations:
+       required: true
