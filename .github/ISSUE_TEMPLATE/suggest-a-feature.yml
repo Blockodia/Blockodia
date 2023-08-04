@@ -1,0 +1,21 @@
+name: Suggest a feature
+description: Suggest a feature to improve our server.
+labels:
+  - Suggestion
+  - Low Priority
+body:
+  - type: textarea
+    id: discribe
+    attributes:
+      label: Discribe the feature
+      description: Discribe the feature you want to be added.
+      placeholder: I want players to be able to double jump when pressing space in the air
+    validations:
+      required: true
+  - type: textarea
+    id: anythingelse
+    attributes:
+      label: Anything else?
+      description: This is the place for screenshots or extra information.
+      placeholder: No. Nothing else.
+      value: No. Nothing else.
