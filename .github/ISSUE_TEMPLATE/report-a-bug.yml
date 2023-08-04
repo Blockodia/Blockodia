@@ -1,0 +1,11 @@
+name: Report a bug
+about: Help us improve the server
+title: ''
+labels: bug
+assignees: ''
+body:
+  - type: input
+    id: describe
+    attributes:
+      label: Describe the Bug
+      description: "What is the bug?"
